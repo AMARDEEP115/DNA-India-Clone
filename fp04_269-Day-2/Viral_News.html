@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIRAL NEWS</title>
+    <link rel="stylesheet" href="fp04_269__css/navbar.css">
+    <link rel="stylesheet" href="fp04_269__css/sidebar.css">
+</head>
+<body>
+    <div id="navbar" class="google_translate_element">
+        <div id="navbarTop">
+            <div>
+                <a href="Viral_News.html"><img src="https://english.cdn.zeenews.com/static/apprun/dna/icons/logodna.png" alt=""></a>
+                <div>हिंदी में पढ़ें</div>
+            </div>
+            <div>
+                <img onclick="disBlk()" src="https://english.cdn.zeenews.com/static/public/menusearch.svg" alt="">
+                <input id="srch" type="text">
+            </div>
+        </div>
+        <div id="navbarBottom">
+            <div><p>Top News</p></div>
+            <div id="sliding_text">
+                <a href="#"><p>Know reason behind accidental firing of India’s BrahMos missile that landed in Pakistan</p></a>
+                <a href="#"><p>Six low-intensity earthquakes jolt parts of J&K in less than 24 hours</p></a>
+                <a href="#"><p>PlayStation VR2 launch date announced by Sony: Know its features, other details</p></a>
+                <a href="#"><p>Liger star Vijay Deverakonda shares why he's never said 'I love you too', says 'my dad taught me</p></a>
+                <a href="#"><p>'Sonali Phogat said something fishy is going on': Sister Rupesh demands CBI probe</p></a>
+                <a href="#"><p>UP: CM Yogi Adityanath orders property confiscation of those involved in illicit liquor, drug trade</p></a>
+                <a href="#"><p>Jammu and Kashmir: Missing BJP leader’s body found hanging from tree in Kathua, probe launched</p></a>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <div id="sidebar">
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg" alt="">
+                <a href="#">Latest News</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg" alt="">
+                <a href="#">Photos</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-videos.svg" alt="">
+                <a href="#">Videos</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-explainer.svg" alt="">
+                <a href="#">Explainers</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-india.svg" alt="">
+                <a href="#">India</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-entertainment.svg" alt="">
+                <a href="#">Entertainment</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-sports.svg" alt="">
+                <a href="#">Sports</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-viralNews.svg" alt="">
+                <a href="#">Viral News</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-lifestyle.svg" alt="">
+                <a href="#">Lifestyle</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-education.svg" alt="">
+                <a href="#">Education</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-business.svg" alt="">
+                <a href="#">Business</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/icons-world.svg" alt="">
+                <a href="#">World</a>
+            </div>
+            <div>
+                <img src="https://english.cdn.zeenews.com/static/public/icons/ezmall-icon1.png" alt="">
+                <a href="#">Ezmall</a>
+            </div>
+        </div>
+        <div id="news"></div>
+        <div id="Right_Sidebar"></div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+
+<script>
+    let disBlk = ()=>{
+        document.querySelector("#srch").style.display="block";
+        setTimeout(disNon,15000);
+    }
+    let disNon = ()=>{
+        document.querySelector("#srch").style.display="none";
+    }
+</script>
