@@ -1,0 +1,26 @@
+.subHeading {
+    width: 98%;
+    height: 80px;
+    padding: 1%;
+
+    display: flex;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.subHeading>div {
+    height: 100%;
+}
+
+.subHeading>div>img {
+    height: 100%;
+}
+
+.subHeading>h3 {
+    padding: 0px 5px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
