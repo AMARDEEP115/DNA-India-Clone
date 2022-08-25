@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./News.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div>
+      <div id="logo_box">
+        <a href="./homepage.html">
+          <img id="logo" src="https://english.cdn.zeenews.com/static/apprun/dna/icons/logodna.png" alt="logo" />
+        </a>
+      </div>
+      <div id="hindi"><button>हिंदी में पढ़ें</button></div>
+    </div>
+    <div>
+      <img src="https://english.cdn.zeenews.com/static/public/menusearch.svg" alt="search" />
+    </div>
+  </div>
+  <div id="spacing"></div>
+  <div id="topNews">
+    <div>Top News</div>
+    <div>
+      <div id="newsBanner">After Microsoft, Meta, and Google, Apple to slow down hiring in 2023</div>
+      <div id="buttons">
+        <div><img onclick="prev()" src="https://english.cdn.zeenews.com/static/public/prev_carousel.svg" alt=""></div>
+      <div><img onclick="next()"  src="https://english.cdn.zeenews.com/static/public/next_carousel.svg" alt=""></div>
+    </div>
+    </div>
+  </div>
+  <div class="layout">
+    <div id="category">
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg" alt="" />
+        Latest News
+      </a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg" alt="" />
+        Photos
+      </a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-videos.svg" alt="" />
+        Videos</a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-explainer.svg" alt="" />
+        Explainers
+      </a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-india.svg" alt="" />
+        India
+      </a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-entertainment.svg" alt="" />
+        Entertainment
+      </a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-sports.svg" alt="" />
+        Sports
+      </a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-viralNews.svg" alt="" />
+        Viral News
+      </a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-lifestyle.svg" alt="" />
+        Lifestyle
+      </a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-business.svg" alt="" />
+        Business
+      </a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/icons-world.svg" alt="" />
+        World
+      </a>
+      <a href=""><img src="https://english.cdn.zeenews.com/static/public/icons/ezmall-icon1.png" alt="" />
+        Ezmall
+      </a>
+    </div>
+    <div id="news">
+        <h2>LATEST NEWS</h2>
+        <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/20/2523797-go-first.jpg"
+                alt="" />
+            </div>
+            <h3>
+              Go First Delhi-Guwahati flight's windshield cracks mid-air, diverted
+              to Jaipur
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/19/2523656-pankaj-mishra-hemant-soren-pti-1.jpg"
+                alt="" />
+            </div>
+            <h3>
+              Jharkhand CM Hemant Soren's aide Pankaj Mishra arrested by ED in
+              illegal mining case
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/20/2523810-2522436-2521615-1010563-virat-kohli.jpg"
+                alt="" />
+            </div>
+            <h3>
+              India to tour Zimbabwe for a three-match ODI series, Virat Kohli to
+              be named in the squad : Sources
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/20/2523802-fotojet-2022-07-20t162953.500-1.jpg"
+                alt="" />
+            </div>
+            <h3>
+              Tanushree Dutta accuses ‘MeToo culprits, Bollywood Mafia’ of
+              'harassing' her
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/20/2523772-1614425-fotojet-2022-04-27t201024.538-1.jpg"
+                alt="" />
+            </div>
+            <h3>
+              Kiccha Sudeep breaks silence over Twitter spat with Ajay Devgn
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/20/2523759-2463059-2430789-2427567-shinde-thackeray.jpg"
+                alt="" />
+            </div>
+            <h3>
+              'Man who can't find 20 MLAs...': Eknath Shinde's Sena faction slams
+              Uddhav Thackeray in SC
+            </h3>
+          </div>  
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532860-kjo.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Koffee With Karan 7: Karan Johar reveals why he is not judging rapid fire round this season
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/25/2532870-whatsapp-image-2022-08-08-at-6.26.19-am.jpeg"
+                alt="" />
+            </div>
+            <h3>
+                Wordle 432 answer for today: Here is the Wordle answer for August 25
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532811-2532553-images.jpeg"
+                alt="" />
+            </div>
+            <h3>
+                'I know that I'm batting well', says Virat Kohli ahead of India's opening clash against Pakistan in Asia Cup
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532852-fire.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Delhi: Fire breaks out at factory in Patparganj Industrial Area, one worker dies
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532839-apple.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Apple's September 7 launch event announced, new iPhone 14 expected
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532836-bilkis-bano-2.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Bilkis Bano Case: Supreme Court to hear today plea against release of 11 life convicts by Gujarat government
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532824-fotojet-15.jpg"
+                alt="" />
+            </div>
+            <h3>
+                MANC vs BAR probable XI: Fantasy tips for club friendly match between Manchester City and FC Barcelona
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532821-untitled-design-2022-07-19t213352.194.jpg"
+                alt="" />
+            </div>
+            <h3>
+                KMAT 2022 session 2 admit card released at cee.kerala.gov.in: All you need to know
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532825-hydrogen-train.jpg"
+                alt="" />
+            </div>
+            <h3>
+                https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532825-hydrogen-train.jpg
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532819-untitled-design-2022-07-13t173416.302.jpg"
+                alt="" />
+            </div>
+            <h3>
+                SSC CGL Tier 2 Answer Key 2021 OUT at ssc.nic.in: Official website, How to raise objections
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532822-ganesh-chaturthi-2022-know-all-about-5-famous-lord-ganesha-temples-that-devotees-must-visit.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Ganesh Chaturthi 2022: Know all about 5 famous Lord Ganesha temples that devotees must visit
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532816-supreme-court.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Quota for EWS, WhatsApp privacy policy and more: Supreme Court lists 25 Constitution bench cases from Aug 29
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532815-untitled-design-2022-08-24t214107.061.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Rajasthan Police Recruitment 2022: Exam result OUT at police.rajasthan.gov.in, here's how to check
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532817-fotojet-14.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Watch: Virat Kohli and Babar Azam shake hands ahead of the all important match between India-Pakistan
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532810-liger1.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Liger box office collection: Vijay Deverakonda starrer off to a roaring start, earns above $200K at USA premieres
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532812-jacqueline.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Others who received 'gifts'...: Jacqueline names Nora Fatehi in response to ED, calls herself a 'victim'
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532808-wifi-hotspots.jpg"
+                alt="" />
+            </div>
+            <h3>
+                What is the full form of WiFi? Story behind the commonly used word will surprise you
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/08/24/2532806-lineman.jpg"
+                alt="" />
+            </div>
+            <h3>
+                Uttar Pradesh: Lineman cuts power supply to police station after cops fine him, video goes viral
+            </h3>
+          </div>
+          <div class="subHeading">
+            <div>
+              <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/08/24/2532809-jupiter-like-never-seen-before-explore-5-fascinating-facts-about-nasa-s-stunning-new-image-1.jpg"
+                alt="" />
+            </div>
+            <h3>
+           When should you get your passport renewed? Know what documents you need to apply for renewal   
+            </h3>
+          </div>
+    </div>
+    <div id="sideBar">
+      <div id="trending">
+        <div>
+          <h4>TRENDING NEWS TOPICS</h4>
+          <p>More</p>
+        </div>
+        <div class="trend">
+          <div><img src="https://english.cdn.zeenews.com/static/apprun/dna/icons/trending-coronavirus.png" alt=""> Lalit
+            Modi</div>
+          <div><img src="https://english.cdn.zeenews.com/static/apprun/dna/icons/trending-worldcup.png" alt="">Sri Lanka
+            Crisis</div>
+          <div><img src="https://english.cdn.zeenews.com/static/apprun/dna/icons/trending-eye.png" alt="">Rishi Sunak
+          </div>
+        </div>
+      </div>
+      <div id="popular">
+        <div>
+          <h4>POPULAR STORIES</h4>
+          <p>More</p>
+        </div>
+        <div class="popularTag">
+          <div><img
+              src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/21/2524047-untitled-design-2022-07-05t154922.002.jpg"
+              alt="">
+            <H5>Telangana EdCET admit card 2022 declared: See how to check here</H5>
+          </div>
+          <div><img
+              src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/21/2523918-students-pti.jpg"
+              alt="">
+            <H5>CBSE Class 10, 12 Board Result 2022 date, time SOON: Know how to check CBSE Term 2 result at
+              cbresults.nic.in</H5>
+          </div>
+          <div><img
+              src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/21/2523922-sonia-rahul.jpg"
+              alt="">
+            <H5>National Herald case explained: Why is Sonia Gandhi appearing before ED today?</H5>
+          </div>
+          <div><img
+              src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/20/2523803-untitled-design-2022-07-10t181417.747.jpg"
+              alt="">
+            <H5>This year, the CBSE Board result 2022 can be checked at mobile applications UMANG and DigiLocker. </H5>
+          </div>
+          <div><img
+              src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/20/2523831-untitled-design-76.jpg"
+              alt="">
+            <H5>COMEDK UGET 2022: Registration starts for counselling, all important details here</H5>
+          </div>
+        </div>
+      </div>
+      <div id="mostViewed">
+        <div>
+          <h4>Most Viewed</h4>
+          <p>More</p>
+        </div>
+        <div class="viewed">
+          <div>
+            <div>
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/07/08/2520707-shreya-fi-1.jpg"
+                alt="">
+              <p>The family man actress shreya dhanwanthary sets the internet</p>
+            </div>
+            <div>
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/05/23/1942850-team-india.jpg"
+                alt="">
+              <p>Sanju samson rahul tripathi shikhar dhawan shivam dube rahul </p>
+            </div>
+            <div>
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/05/27/2007952-fotojet-2022-05-27t122144.022.jpg"
+                alt="">
+              <p>6 times janhvi kapoor handled wardrobe</p>
+            </div>
+            <div>
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/06/17/2359221-sara-ali-khan.jpg"
+                alt="">
+              <p>Sara ali khan looks sizzling hot in see through dress </p>
+            </div>
+            <div>
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/quarter/public/2022/05/23/1942596-gyanvapi-mosque9.jpg"
+                alt="">
+              <p>Rare photo of gyanvapi complex clicked in </p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="speed">
+          <div>
+            <h4>SPEED READS</h4>
+            <p>More</p>
+          </div>
+          <div class="speedTag">
+            <div><img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/22/2524194-anushka.jpg"
+                alt="">
+              <H5>Anushka Sharma's all-white room's vintage French windows in the video provided a view of the street.
+              </H5>
+            </div>
+            <div><img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/21/2524188-untitled-design-2022-07-18t233457.331.jpg"
+                alt="">
+              <H5>Ghaziabad to follow holiday from July 22 to 26 due to Kanwar yatra</H5>
+            </div>
+            <div><img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/21/2524162-2523601-cyber-crime.jpg"
+                alt="">
+              <H5>The Centre said that there has been a major spike in cyber security-related threats in India</H5>
+            </div>
+            <div><img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/21/2524141-2344149-fotojet-4.jpg"
+                alt="">
+              <H5>KL Rahul tests positive for Covid-19, doubtful for the T20I series against West Indies</H5>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
+<script src="./News.js"></script>
