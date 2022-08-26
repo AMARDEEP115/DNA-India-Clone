@@ -140,6 +140,7 @@ body{
     color: #2b2b2b;
     text-decoration: underline;
     text-decoration-color: #ffde2f;
+    margin-top: 20px;
 }
 #popular>div{
     display: flex;
@@ -241,5 +242,39 @@ body{
     
 }
 #trending>div+div>P:hover{
+    color: #3b5998;
+}
+#most-viewed>hr{
+    margin-top: -1px;
+    margin-bottom: 20px;
+}
+#most-viewed>div{
+    display: flex;
+    width: 93%;
+    height: 130px;
+    margin-top: 10px;
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+#most-viewed>div>img{
+   width: 60%;
+   height: 60%;
+   margin-right: 10px;
+   cursor: pointer;
+}
+#most-viewed>div>P{
+    font-family: "Roboto Slab",sans-serif;
+    font: "Roboto Slab" -400;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 18px;
+    color: #000000;
+    cursor: pointer;
+}
+#most-viewed>div>P:hover{
     color: #3b5998;
 }

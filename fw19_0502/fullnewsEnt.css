@@ -130,26 +130,10 @@ body{
     padding: 15px;
     
 }
-#container>#mid-section>h1{
-    font-family: "Roboto Slab",sans-serif;
-    font: "Roboto Slab" -500;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 29px;
-    line-height: 29px;
-    color: #212529;
-    text-decoration: underline;
-    text-decoration-color: #ffde2f;
-    
-}
-#mid-section>hr{
-    width: 100%;
-    margin-top: -3px;
-    margin-bottom: 20px;
-}
+
+
 
 #mid-section>div{
-    display: flex;
     width: 97%;
     height: 100px;
     margin-top: 10px;
@@ -160,9 +144,8 @@ body{
 
 }
 #mid-section>div>img{
-   width: 50%;
-   margin-right: 10px;
-   cursor: pointer;
+   width: 100%;
+  
 }
 #mid-section>div>P{
     font-family: "Roboto Slab",sans-serif;
@@ -172,11 +155,8 @@ body{
     font-size: 19px;
     line-height: 18px;
     color: #000000;
-    cursor: pointer;
 }
-#mid-section>div>P:hover{
-    color: #3b5998;
-}
+
 #right-section{
     margin-left: 30px;
     width: 21%;
