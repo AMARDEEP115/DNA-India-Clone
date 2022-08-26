@@ -1,11 +1,10 @@
-
 let key = "33695b2ce4b245baa488f877245de4ef";
 
 async function getData(){
 
     try{
 
-        let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=15&apiKey=${key}`);
+        let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=entertainment&pageSize=1&apiKey=${key}`);
         let data  = await res.json();
 
         console.log(data);
@@ -34,6 +33,7 @@ async function getPopular(){
         console.log("error:",error);
     }
 }
+
 getPopular();
 async function getMviewed(){
 
@@ -58,15 +58,23 @@ function appendData(Newsdata){
     Newsdata.forEach ((el)=> {
 
         let div = document.createElement("div");
-        let image = document.createElement("img");
-        image.src=el.urlToImage;
+        
         let title = document.createElement("p");
         title.innerText=el.title;
-        div.append(image,title);
+        let desc = document.createElement("p");
+        desc.innerText=el.description;
+        let publisher = document.createElement("p");
+        publisher.innerText=el.publishedAt;
+        let image = document.createElement("img");
+        image.src=el.urlToImage;
+        let content = document.createElement("p");
+        content.innerText=el.content;
+        div.append(title,desc,publisher,image,content);
         document.getElementById("mid-section").append(div);
         
     });
 };
+
 function appendPopularData(Populardata){
 
     Populardata.forEach ((el)=> {

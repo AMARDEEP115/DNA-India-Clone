@@ -5,7 +5,7 @@ async function getData(){
 
     try{
 
-        let res = await fetch(`https://newsapi.org/v2/top-headlines?sources=buzzfeed&apiKey=${key}`);
+        let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=entertainment&pageSize=20&apiKey=${key}`);
         let data  = await res.json();
 
         console.log(data);
@@ -23,7 +23,7 @@ async function getPopular(){
 
     try{
 
-        let res = await fetch(`https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${key}`);
+        let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=general&pageSize=5&apiKey=${key}`);
         let data  = await res.json();
 
         console.log(data);
@@ -36,7 +36,23 @@ async function getPopular(){
 }
 
 getPopular();
+async function getMviewed(){
 
+    try{
+
+        let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=5&apiKey=${key}`);
+        let data  = await res.json();
+
+        console.log(data);
+        let Mvieweddata = data.articles;
+        appendMviewedData(Mvieweddata);
+    }
+    catch(error){
+        console.log("error:",error);
+    }
+}
+
+getMviewed();
 
 function appendData(Newsdata){
 
@@ -67,4 +83,17 @@ function appendPopularData(Populardata){
         
     });
 };
+function appendMviewedData(Mvieweddata){
 
+    Mvieweddata.forEach ((el)=> {
+
+        let div = document.createElement("div");
+        let image = document.createElement("img");
+        image.src=el.urlToImage;
+        let title = document.createElement("p");
+        title.innerText=el.title;
+        div.append(image,title);
+        document.getElementById("most-viewed").append(div);
+        
+    });
+};
