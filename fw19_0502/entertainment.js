@@ -61,8 +61,18 @@ function appendData(Newsdata){
         let div = document.createElement("div");
         let image = document.createElement("img");
         image.src=el.urlToImage;
+        image.addEventListener("click", function fullNews(){
+        console.log(image);
+        localStorage.setItem("Image",JSON.stringify(el));
+        window.location.href="fullnewsEnt.html";
+        })
         let title = document.createElement("p");
         title.innerText=el.title;
+        title.addEventListener("click", function fullNews(){
+            console.log(image);
+            localStorage.setItem("Image",JSON.stringify(el));
+            window.location.href="fullnewsEnt.html";
+            })
         div.append(image,title);
         document.getElementById("mid-section").append(div);
         
@@ -76,8 +86,18 @@ function appendPopularData(Populardata){
         let div = document.createElement("div");
         let image = document.createElement("img");
         image.src=el.urlToImage;
+        image.addEventListener("click", function fullNews(){
+            console.log(image);
+            localStorage.setItem("Image",JSON.stringify(el));
+            window.location.href="fullnewsEnt.html";
+            })
         let title = document.createElement("p");
         title.innerText=el.title;
+        title.addEventListener("click", function fullNews(){
+            console.log(image);
+            localStorage.setItem("Image",JSON.stringify(el));
+            window.location.href="fullnewsEnt.html";
+            })
         div.append(image,title);
         document.getElementById("popular").append(div);
         
@@ -90,10 +110,22 @@ function appendMviewedData(Mvieweddata){
         let div = document.createElement("div");
         let image = document.createElement("img");
         image.src=el.urlToImage;
+        image.addEventListener("click", function fullNews(){
+            console.log(image);
+            localStorage.setItem("Image",JSON.stringify(el));
+            window.location.href="fullnewsEnt.html";
+            })
         let title = document.createElement("p");
         title.innerText=el.title;
+        title.addEventListener("click", function fullNews(){
+            console.log(image);
+            localStorage.setItem("Image",JSON.stringify(el));
+            window.location.href="fullnewsEnt.html";
+            })
         div.append(image,title);
         document.getElementById("most-viewed").append(div);
         
     });
 };
+
+ 

@@ -145,7 +145,7 @@ body{
 #popular>div{
     display: flex;
     width: 93%;
-    height: 130px;
+    height: auto;
     margin-top: 10px;
     padding:10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -251,7 +251,7 @@ body{
 #most-viewed>div{
     display: flex;
     width: 93%;
-    height: 130px;
+    height: auto;
     margin-top: 10px;
     padding:10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;

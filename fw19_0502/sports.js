@@ -60,8 +60,18 @@ function appendData(Newsdata){
         let div = document.createElement("div");
         let image = document.createElement("img");
         image.src=el.urlToImage;
+        image.addEventListener("click", function fullNews(){
+            console.log(image);
+            localStorage.setItem("Imagespo",JSON.stringify(el));
+            window.location.href="fullnewsSpo.html";
+            })
         let title = document.createElement("p");
         title.innerText=el.title;
+        title.addEventListener("click", function fullNews(){
+            console.log(image);
+            localStorage.setItem("Imagespo",JSON.stringify(el));
+            window.location.href="fullnewsSpo.html";
+            })
         div.append(image,title);
         document.getElementById("mid-section").append(div);
         
@@ -74,7 +84,17 @@ function appendPopularData(Populardata){
         let div = document.createElement("div");
         let image = document.createElement("img");
         image.src=el.urlToImage;
+        image.addEventListener("click", function fullNews(){
+            console.log(el);
+            localStorage.setItem("Imagespo",JSON.stringify(el));
+            window.location.href="fullnewsSpo.html";
+            })
         let title = document.createElement("p");
+        title.addEventListener("click", function fullNews(){
+            console.log(el);
+            localStorage.setItem("Imagespo",JSON.stringify(el));
+            window.location.href="fullnewsSpo.html";
+            })
         title.innerText=el.title;
         div.append(image,title);
         document.getElementById("popular").append(div);
@@ -88,8 +108,18 @@ function appendMviewedData(Mvieweddata){
         let div = document.createElement("div");
         let image = document.createElement("img");
         image.src=el.urlToImage;
+        image.addEventListener("click", function fullNews(){
+            console.log(image);
+            localStorage.setItem("Imagespo",JSON.stringify(el));
+            window.location.href="fullnewsSpo.html";
+            })
         let title = document.createElement("p");
         title.innerText=el.title;
+        title.addEventListener("click", function fullNews(){
+            console.log(image);
+            localStorage.setItem("Imagespo",JSON.stringify(el));
+            window.location.href="fullnewsSpo.html";
+            })
         div.append(image,title);
         document.getElementById("most-viewed").append(div);
         
