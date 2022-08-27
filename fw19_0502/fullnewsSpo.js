@@ -1,5 +1,5 @@
 let key = "33695b2ce4b245baa488f877245de4ef";
-let LSData = JSON.parse(localStorage.getItem("Image")) || [];
+let LSData = JSON.parse(localStorage.getItem("Imagespo")) || [];
 console.log(LSData);
 
 
@@ -7,7 +7,7 @@ async function getData(){
 
     try{
 
-        let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=entertainment&pageSize=1&apiKey=${key}`);
+        let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=1&apiKey=${key}`);
         let data  = await res.json();
 
         console.log(data);
