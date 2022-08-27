@@ -1,0 +1,7 @@
+#body{
+    display: flex;
+    gap: 10px;
+}
+#news{
+    width: 751px;
+}
