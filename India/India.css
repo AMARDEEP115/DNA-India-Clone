@@ -2,7 +2,6 @@ body {
   margin: 0px;
   background-color: #f5f5f5;
   font-family: 'Roboto Slab', serif;
-  padding-bottom: 50px;
   color: #313131;
 
 }
@@ -10,6 +9,14 @@ body {
 a,
 button {
   font-family: 'Roboto Slab', serif;
+}
+
+
+#sliding_text{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -111,7 +118,6 @@ a {
 }
 
 .layout>div {
-  /* border: 1px solid red; */
   margin: 0% 1%;
 
 }
