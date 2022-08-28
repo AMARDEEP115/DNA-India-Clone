@@ -84,7 +84,8 @@ body{
 #sliding_text a{
     text-decoration: none;
     color: #ffffff;
-}.animated-text{
+}
+.animated-text{
     /* position: fixed; */
     overflow: hidden;
     margin-left: 30px;
