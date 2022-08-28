@@ -85,3 +85,29 @@ body{
     text-decoration: none;
     color: #ffffff;
 }
+.animated-text{
+    /* position: fixed; */
+    overflow: hidden;
+    margin-left: 30px;
+}
+.line{
+    margin-bottom: 43px;
+}
+.line:first-child{
+    animation: ani 15s infinite;
+}
+@keyframes ani{
+    0%{margin-top: 0;}
+    10%{margin-top: -60px;}
+    17%{margin-top: -120px;}
+    26%{margin-top: -180px;}
+    36%{margin-top: -240px;}
+    43%{margin-top: -300px;}
+    50%{margin-top: -360px;}
+    58%{margin-top: -300px;}
+    67%{margin-top: -240px;}
+    77%{margin-top: -180px;}
+    86%{margin-top: -120px;}
+    93%{margin-top: -60px;}
+    100%{margin-top: 0;}
+}
