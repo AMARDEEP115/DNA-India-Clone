@@ -10,15 +10,15 @@
 body{
     font-family: 'Inter', sans-serif;
 }
-
-
-#body{
+/* 
+ #body{
     width:100%;
-    /* border:1px solid green; */
+    border:1px solid green;
+    display: flex;
     justify-content: center;
     margin-top: auto;
     align-items: center;
-}
+}  */
 #video_sec>h1{
     border: 2px solid rgb(177, 177, 177);
     border-left: none;
@@ -34,7 +34,7 @@ body{
     border-right: none;
 }
 #video_sec{
-    width:50%;
+    width:100%;
     justify-content: center;
     margin: auto;
     margin-top: 10px;
