@@ -1,0 +1,31 @@
+body{
+    background-color: whitesmoke;
+}
+#body{
+    display: flex;
+    gap: 10px;
+}
+#news{
+    width: 751px;
+}
+#news>div>img{
+    width: 150px;
+    height: 100px;
+}
+#news>div>p{
+    overflow: hidden;
+}
+#news>div{
+    display: flex;
+    gap: 10px;
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 600px;
+}
+#news button{
+    font-weight: bold;
+}
+#news button:hover{
+    color: rgb(200, 200, 35);
+}
