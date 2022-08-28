@@ -1,7 +1,7 @@
 let navbar = () =>{
     return `<div id="navbarTop">
     <div>
-        <a href="#"><img id="logo" src="https://english.cdn.zeenews.com/static/apprun/dna/icons/logodna.png" alt=""></a>
+        <a href="/fertile-distance-9246/homepage.html"><img id="logo" src="https://english.cdn.zeenews.com/static/apprun/dna/icons/logodna.png" alt=""></a>
         <div id="eng" onclick="hindi()">हिंदी में पढ़ें</div>
     </div>
     <div>

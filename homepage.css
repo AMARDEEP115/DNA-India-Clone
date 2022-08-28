@@ -100,7 +100,10 @@ a {
     display: flex;
     justify-content: space-between;
 }
-
+/* body{
+    display: flex;
+    flex-direction: column;
+} */
 #buttons img{
     cursor: pointer;
 }
