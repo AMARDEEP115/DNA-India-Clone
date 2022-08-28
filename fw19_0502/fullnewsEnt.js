@@ -104,3 +104,14 @@ function appendMviewedData(Mvieweddata){
         
     });
 };
+let disBlk = ()=>{
+    document.querySelector("#srch").style.display="block";
+    document.querySelector("#sIcon").style.marginTop="56px";
+    document.querySelector("#srch").style.marginTop="15px";
+    // document.querySelector("#srch").style.
+    setTimeout(disNon,15000);
+}
+let disNon = ()=>{
+    document.querySelector("#sIcon").style.marginTop="3px";
+    document.querySelector("#srch").style.display="none";
+}

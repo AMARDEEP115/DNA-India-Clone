@@ -128,6 +128,66 @@ function appendMviewedData(Mvieweddata){
     });
 };
 
+let disBlk = ()=>{
+    document.querySelector("#srch").style.display="block";
+    document.querySelector("#sIcon").style.marginTop="56px";
+    document.querySelector("#srch").style.marginTop="15px";
+    // document.querySelector("#srch").style.
+    setTimeout(disNon,15000);
+}
+let disNon = ()=>{
+    document.querySelector("#sIcon").style.marginTop="3px";
+    document.querySelector("#srch").style.display="none";
+}
+// let getdata= async ()=>{
+//     try {
+//       let res= await fetch(`https://masai-mock-api-2.herokuapp.com/news/top-headlines?country=in`);
+//       let data= await res.json();
+//       padd(data.articles);
+//       console.log(data.articles[0].title)
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   }
+  
+//   getdata()
+  
+//   let ptitle=[];
+  
+//   let padd= (data)=>{
+//     data.forEach(el => {
+  
+//       let title= el.title;
+//       ptitle.push({title});
+//     });
+   
+  
+//     let c= document.getElementById('sliding_text');
+//     c.innerHTML=null;
+//     let nc = document.createElement('div');
+//     nc.setAttribute('id','line');
+//     c.append(nc)
+  
+//     let nb= document.querySelector('#line');
+  
+//     let n= 4;
+//     let fnum = 10;
+//     function next() {
+//       if (fnum == 14) {
+//         n= 4;
+//         fnum = 10;
+//       } else {
+//         n++;
+//         fnum++;
+//       }
+//       nb.innerText= ptitle[n].title;
+  
+      
+//     };
+//     setInterval(function () {next();},1000);
+  
+//   }
+
 
 
  
