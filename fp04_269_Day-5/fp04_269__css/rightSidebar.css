@@ -1,0 +1,154 @@
+#Right_Sidebar{
+    width: 301px;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#Right_Sidebar p:hover{
+    color: #5564c9;
+}
+#Right_Sidebar hr{
+    border-color: #ffde2f;
+}
+#Right_Sidebar>div:first-child{
+    background-color: #383838;
+    padding-bottom: 10px;
+}
+#Right_Sidebar h2{
+    color: white;
+}
+#Right_Sidebar>div:first-child p{
+    color: white;
+}
+#sliding_video{
+    display: flex;
+    overflow: hidden;
+    gap: 10px;
+    width: 270px;
+}
+#Right_Sidebar h2{
+    text-align: center;
+    margin-top: 10px;
+}
+#sliding_video img{
+    width: 250px;
+}
+#sliding_video img+p{
+    text-align: center;
+}
+.vid:first-child{
+    animation: anims 10s infinite;
+}
+@keyframes anims{
+    0%{margin-left: 0px;}
+    15%{margin-left: -250px;}
+    35%{margin-left: -510px;}
+    50%{margin-left: -770px;}
+    65%{margin-left: -510px;}
+    80%{margin-left: -250px;}
+    100%{margin-left: 0px;}
+}
+#Right_Sidebar>div:first-child button{
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #ffde2f;
+    padding: 7px;
+}
+
+
+
+.rs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rs>button{
+    border: none;
+    background-color: whitesmoke;
+}
+#rs2a{
+    background-color: #f2dd6b;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: black;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+#rs2b{
+    background-color: #5564c9;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#rs2c{
+    background-color: #b993b8;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: black;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.RsDiv>img{
+    height: 60px;
+    width: 100px;
+}
+.RsDiv{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+#rs4 img{
+    height: 100px;
+    width: 120px;
+}
+#rs4>hr+div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#rs5f>img{
+    width: 290px;
+}
+#rs5f>p{
+    font-weight: bold;
+    width: 290px;
+}
+#rs6>hr+div{
+    display: flex;
+    overflow: hidden;
+    gap: 25px;
+}
+#rs6 p{
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 300;
+}
+#rs6 img{
+    width: 260px;
+}
+.vix:first-child{
+    animation: anim 10s infinite;
+}
+@keyframes anim{
+    0%{margin-left: 0px;}
+    15%{margin-left: -270px;}
+    35%{margin-left: -550px;}
+    50%{margin-left: -830px;}
+    65%{margin-left: -550px;}
+    80%{margin-left: -270px;}
+    100%{margin-left: 0px;}
+}
