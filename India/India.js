@@ -70,7 +70,13 @@ let padd= (data)=>{
   let spci= document.querySelector('#photo2');
   let spct= document.querySelector('#photoText2');
 
-  let nb= document.getElementById('newsBanner');
+  let c= document.getElementById('sliding_text');
+  c.innerHTML=null;
+  let nc = document.createElement('div');
+  nc.setAttribute('id','line');
+  c.append(nc)
+
+  let nb= document.querySelector('#line');
 
   let n= 4;
   let fnum = 10;
@@ -135,7 +141,7 @@ let vadd= (data)=>{
   let snum = 4;
   let pagenum = 0;
   function next() {
-    if (fnum == 6) {
+    if (fnum == 5) {
       fnum = 3;
       snum = 4;
     } else {
@@ -148,7 +154,7 @@ let vadd= (data)=>{
     spci.src = vimg[snum].img;
     spct.innerText = vtitle[snum].title;
 
-    if (pagenum == 3) {
+    if (pagenum == 2) {
       pagenum = 0;
       document.querySelector('#b>button:nth-child('+(pagenum+1)+')').style.backgroundColor= "yellow" ;
       document.querySelector('#b>button:nth-child('+(pagenum+2)+')').style.backgroundColor= "white" ;

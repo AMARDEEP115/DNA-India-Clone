@@ -51,7 +51,13 @@ let padd= (data)=>{
   let spci= document.querySelector('#video2');
   let spct= document.querySelector('#videoText2');
 
-  let nb= document.getElementById('newsBanner');
+  let c= document.getElementById('sliding_text');
+  c.innerHTML=null;
+  let nc = document.createElement('div');
+  nc.setAttribute('id','line');
+  c.append(nc)
+
+  let nb= document.querySelector('#line');
 
   let n= 4;
   let fnum = 10;

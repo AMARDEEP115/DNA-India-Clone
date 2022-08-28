@@ -1,16 +1,18 @@
-
 let key = "33695b2ce4b245baa488f877245de4ef";
+let LSData = JSON.parse(localStorage.getItem("Imagespo")) || [];
+console.log(LSData);
+
 
 async function getData(){
 
     try{
 
-        let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=15&apiKey=${key}`);
+        let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=1&apiKey=${key}`);
         let data  = await res.json();
 
         console.log(data);
         let Newsdata = data.articles;
-        appendData(Newsdata);
+        appendData(LSData);
     }
     catch(error){
         console.log("error:",error);
@@ -34,6 +36,7 @@ async function getPopular(){
         console.log("error:",error);
     }
 }
+
 getPopular();
 async function getMviewed(){
 
@@ -53,30 +56,26 @@ async function getMviewed(){
 
 getMviewed();
 
-function appendData(Newsdata){
-
-    Newsdata.forEach ((el)=> {
+function appendData(LSData){
 
         let div = document.createElement("div");
-        let image = document.createElement("img");
-        image.src=el.urlToImage;
-        image.addEventListener("click", function fullNews(){
-            console.log(image);
-            localStorage.setItem("Imagespo",JSON.stringify(el));
-            window.location.href="fullnewsSpo.html";
-            })
+        
         let title = document.createElement("p");
-        title.innerText=el.title;
-        title.addEventListener("click", function fullNews(){
-            console.log(image);
-            localStorage.setItem("Imagespo",JSON.stringify(el));
-            window.location.href="fullnewsSpo.html";
-            })
-        div.append(image,title);
+        title.innerText=LSData.title;
+        let desc = document.createElement("p");
+        desc.innerText=LSData.description;
+        let publisher = document.createElement("p");
+        publisher.innerText=`Published On: ${LSData.publishedAt}`;
+        let image = document.createElement("img");
+        image.src=LSData.urlToImage;
+        let content = document.createElement("p");
+        content.innerText=LSData.content;
+        div.append(title,desc,publisher,image,content);
         document.getElementById("mid-section").append(div);
         
-    });
+    
 };
+
 function appendPopularData(Populardata){
 
     Populardata.forEach ((el)=> {
@@ -84,17 +83,7 @@ function appendPopularData(Populardata){
         let div = document.createElement("div");
         let image = document.createElement("img");
         image.src=el.urlToImage;
-        image.addEventListener("click", function fullNews(){
-            console.log(el);
-            localStorage.setItem("Imagespo",JSON.stringify(el));
-            window.location.href="fullnewsSpo.html";
-            })
         let title = document.createElement("p");
-        title.addEventListener("click", function fullNews(){
-            console.log(el);
-            localStorage.setItem("Imagespo",JSON.stringify(el));
-            window.location.href="fullnewsSpo.html";
-            })
         title.innerText=el.title;
         div.append(image,title);
         document.getElementById("popular").append(div);
@@ -108,18 +97,8 @@ function appendMviewedData(Mvieweddata){
         let div = document.createElement("div");
         let image = document.createElement("img");
         image.src=el.urlToImage;
-        image.addEventListener("click", function fullNews(){
-            console.log(image);
-            localStorage.setItem("Imagespo",JSON.stringify(el));
-            window.location.href="fullnewsSpo.html";
-            })
         let title = document.createElement("p");
         title.innerText=el.title;
-        title.addEventListener("click", function fullNews(){
-            console.log(image);
-            localStorage.setItem("Imagespo",JSON.stringify(el));
-            window.location.href="fullnewsSpo.html";
-            })
         div.append(image,title);
         document.getElementById("most-viewed").append(div);
         

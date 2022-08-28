@@ -10,15 +10,15 @@
 body{
     font-family: 'Inter', sans-serif;
 }
-
-
-#body{
+/* 
+ #body{
     width:100%;
-    /* border:1px solid green; */
+    border:1px solid green;
+    display: flex;
     justify-content: center;
     margin-top: auto;
     align-items: center;
-}
+}  */
 #video_sec>h1{
     border: 2px solid rgb(177, 177, 177);
     border-left: none;
@@ -34,7 +34,7 @@ body{
     border-right: none;
 }
 #video_sec{
-    width:50%;
+    width:100%;
     justify-content: center;
     margin: auto;
     margin-top: 10px;
@@ -84,5 +84,61 @@ body{
     letter-spacing: 0.8px;
 
 }
+
+#query{
+    border:none;
+    /* color:white; */
+    outline-width: 0px;
+    border-bottom: 1px solid grey;
+} 
+
+#social_media{
+    padding:20px;
+    text-align: center;
+    background-color: rgb(31, 26, 26);
+}
+
+
+ #social_media>a{
+   
+    padding:5.5px 8px;
+    width: 10%;
+    border:1px solid white;
+    color: white;
+    border-radius: 50%;
+    font-size: 23px;
+    margin-left: 2px;
+    
+     
+}
+/*#social_media>a>i{.
+    margin-top: 30px;
+    width:10%;
+    height:30px;
+    border: 1px solid red;
+} */
+
+#social_media>a>.fa-brands fa-facebook{
+    width: 100%;
+    border:3px solid red;
+    font-size: 200px;
+    height: 100%;
+    
+}
+
+#search{
+    /* border:1px solid red; */
+    width: 40px;
+    background-color: white;
+    outline-width: none;
+    border-width: 0px;
+    font-size: 20px;
+}
+
+
+
+
+
+
 
 

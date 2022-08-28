@@ -86,6 +86,7 @@ body{
     color: #ffffff;
 }
 .animated-text{
+    /* position: fixed; */
     overflow: hidden;
     margin-left: 30px;
 }
